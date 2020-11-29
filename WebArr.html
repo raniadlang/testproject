@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            var websites=['www.google.com','www.msn.com','www.amezone.co.in','in.answers.yahoo.com',
+                            'en.m.wikipedia.com','codesh.gicks.com','https://byjus.com/maths/area-perimeter-formula',
+                            'www.hackerrank.com','www.facebook.com'];
+            var web=new Array();
+            var j=0;
+            for(var i=0;i<websites.length;i++)
+            {
+                var patt=/www./;
+                if(websites[i].match(patt)){
+                    web[j]=websites[i];
+                    j++;
+                }
+                
+            }
+
+            document.write("Total No. Of sites start with www are :"+web.length);
+
+        </script>
+    </head>
+    <body></body>
+</html>
